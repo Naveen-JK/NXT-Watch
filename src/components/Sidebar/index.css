@@ -1,0 +1,148 @@
+.sidebar-container {
+  width: 250px;
+  min-height: 100vh;
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  z-index: 10;
+}
+
+.sidebar-container.dark {
+  background-color: #212121;
+  border-right: 1px solid #424242;
+  margin-top: 15px;
+}
+
+.sidebar-container.light {
+  background-color: #ffffff;
+  border-right: 1px solid #e2e8f0;
+  margin-top: 15px;
+}
+
+.sidebar-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-item {
+  margin-bottom: 8px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.sidebar-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-container.dark .sidebar-link:hover {
+  background-color: #424242;
+}
+
+.sidebar-container.light .sidebar-link:hover {
+  background-color: #f1f5f9;
+}
+
+.sidebar-link.active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-container.dark .sidebar-link.active {
+  background-color: #424242;
+}
+
+.sidebar-container.light .sidebar-link.active {
+  background-color: #e2e8f0;
+}
+
+.sidebar-icon {
+  font-size: 18px;
+  margin-right: 16px;
+}
+
+.sidebar-container.dark .sidebar-link {
+  color: #f1f1f1;
+}
+
+.sidebar-container.light .sidebar-link {
+  color: #1e293b;
+}
+
+.sidebar-container.dark .sidebar-link.active {
+  color: #ff0000;
+}
+
+.sidebar-container.light .sidebar-link.active {
+  color: #ff0000;
+}
+
+.sidebar-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.contact-section {
+  padding: 0 24px;
+}
+
+.contact-heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.contact-heading.dark {
+  color: #f1f1f1;
+}
+
+.contact-heading.light {
+  color: #1e293b;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.contact-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.contact-text.dark {
+  color: #94a3b8;
+  padding-bottom: 25px;
+}
+
+.contact-text.light {
+  color: #475569;
+  padding-bottom: 25px;
+}
+
+@media (max-width: 767px) {
+  .sidebar-container {
+    display: none;
+  }
+}

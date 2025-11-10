@@ -1,0 +1,157 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-container.dark {
+  background-color: #181818;
+}
+
+.login-container.light {
+  background-color: #f9f9f9;
+}
+
+.login-card {
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-card.dark {
+  background-color: #0f0f0f;
+}
+
+.login-card.light {
+  background-color: #ffffff;
+}
+
+.website-logo {
+  height: 40px;
+  margin-bottom: 32px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.label.dark {
+  color: #f1f1f1;
+}
+
+.label.light {
+  color: #475569;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input.dark {
+  background-color: transparent;
+  border-color: #475569;
+  color: #f1f1f1;
+}
+
+.input.light {
+  background-color: transparent;
+  border-color: #cbd5e1;
+  color: #1e293b;
+}
+
+.input:focus {
+  border-color: #3b82f6;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.checkbox {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+.checkbox-label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.checkbox-label.dark {
+  color: #f1f1f1;
+}
+
+.checkbox-label.light {
+  color: #1e293b;
+}
+
+.login-button {
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s;
+}
+
+.login-button:hover {
+  background-color: #2563eb;
+}
+
+.error-message {
+  color: #ff0b37;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .login-card {
+    padding: 24px;
+    margin: 20px;
+  }
+
+  .website-logo {
+    height: 32px;
+    margin-bottom: 24px;
+  }
+}

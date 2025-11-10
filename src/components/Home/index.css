@@ -1,0 +1,256 @@
+.home-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.home-content {
+  flex-grow: 1;
+  padding: 20px;
+  margin-left: 250px;
+  min-height: 100vh;
+}
+
+.home-content.dark {
+  background-color: #181818;
+}
+
+.home-content.light {
+  background-color: #f9f9f9;
+}
+
+.banner-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png');
+  background-size: cover;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.banner-content {
+  flex-grow: 1;
+}
+
+.banner-logo {
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.banner-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #1e293b;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  max-width: 400px;
+}
+
+.get-it-now-button {
+  background-color: transparent;
+  border: 1px solid #1e293b;
+  color: #1e293b;
+  padding: 8px 16px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.get-it-now-button:hover {
+  background-color: #1e293b;
+  color: #ffffff;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e293b;
+}
+
+.search-container {
+  display: flex;
+  margin-bottom: 20px;
+  max-width: 400px;
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 8px 12px;
+  border: 1px solid;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-input.dark {
+  background-color: transparent;
+  border-color: #475569;
+  color: #f1f1f1;
+}
+
+.search-input.light {
+  background-color: transparent;
+  border-color: #cbd5e1;
+  color: #1e293b;
+}
+
+.search-button {
+  padding: 8px 16px;
+  border: 1px solid;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+}
+
+.search-button.dark {
+  background-color: #475569;
+  border-color: #475569;
+  color: #f1f1f1;
+}
+
+.search-button.light {
+  background-color: #f1f1f1;
+  border-color: #cbd5e1;
+  color: #475569;
+}
+
+.search-icon {
+  font-size: 16px;
+}
+
+.videos-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.no-videos-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.no-videos-image {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.no-videos-heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.no-videos-heading.dark {
+  color: #f1f1f1;
+}
+
+.no-videos-heading.light {
+  color: #1e293b;
+}
+
+.no-videos-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  max-width: 400px;
+}
+
+.no-videos-text.dark {
+  color: #94a3b8;
+}
+
+.no-videos-text.light {
+  color: #475569;
+}
+
+.retry-button {
+  background-color: #4f46e5;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+}
+
+.retry-button:hover {
+  background-color: #3b82f6;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+@media (max-width: 767px) {
+  .home-content {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .banner-container {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .banner-logo {
+    height: 24px;
+    margin-bottom: 15px;
+  }
+
+  .banner-text {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .search-container {
+    max-width: 100%;
+  }
+
+  .videos-list {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
+  }
+
+  .no-videos-image {
+    width: 200px;
+  }
+
+  .no-videos-heading {
+    font-size: 18px;
+  }
+
+  .no-videos-text {
+    font-size: 14px;
+  }
+}

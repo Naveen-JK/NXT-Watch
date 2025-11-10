@@ -1,0 +1,389 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container.dark {
+  background-color: #212121;
+  border-bottom: 1px solid #424242;
+}
+
+.header-container.light {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Logo */
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.website-logo {
+  height: 28px;
+}
+
+.actions-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.theme-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-icon {
+  font-size: 20px;
+}
+
+.header-container.dark .theme-icon {
+  color: #ffffff;
+}
+
+.header-container.light .theme-icon {
+  color: #000000;
+}
+
+/* Menu Button - Mobile Only */
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.menu-icon {
+  font-size: 24px;
+}
+
+.header-container.dark .menu-icon {
+  color: #ffffff;
+}
+
+.header-container.light .menu-icon {
+  color: #000000;
+}
+
+.profile-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.logout-button.desktop {
+  border: 1px solid;
+}
+
+.header-container.dark .logout-button.desktop {
+  color: #f1f1f1;
+  border-color: #f1f1f1;
+}
+
+.header-container.light .logout-button.desktop {
+  color: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.logout-button.mobile {
+  display: none;
+  padding: 8px;
+}
+
+.logout-icon {
+  font-size: 20px;
+}
+
+.header-container.dark .logout-icon {
+  color: #f1f1f1;
+}
+
+.header-container.light .logout-icon {
+  color: #000000;
+}
+
+/* Popup Styles */
+.popup-container {
+  padding: 24px;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 300px;
+}
+
+.popup-container.dark {
+  background-color: #212121;
+  border: 1px solid #424242;
+}
+
+.popup-container.light {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+}
+
+.popup-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.popup-text.dark {
+  color: #f1f1f1;
+}
+
+.popup-text.light {
+  color: #1e293b;
+}
+
+.popup-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.cancel-button {
+  background-color: transparent;
+  border: 1px solid #94a3b8;
+  color: #94a3b8;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  min-width: 80px;
+}
+
+.confirm-button {
+  background-color: #3b82f6;
+  border: none;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  min-width: 80px;
+}
+
+.confirm-button:hover {
+  background-color: #2563eb;
+}
+
+/* Mobile Menu Popup Styles */
+.mobile-menu-popup {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.mobile-menu-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-menu-container.dark {
+  background-color: #212121;
+}
+
+.mobile-menu-container.light {
+  background-color: #ffffff;
+}
+
+.mobile-menu-content {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+}
+
+.close-menu-button {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.mobile-menu-container.dark .close-menu-button {
+  color: #f1f1f1;
+}
+
+.mobile-menu-container.light .close-menu-button {
+  color: #1e293b;
+}
+
+.close-menu-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu-container.dark .close-menu-button:hover {
+  background-color: #424242;
+}
+
+.mobile-nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.mobile-nav-item {
+  margin-bottom: 0;
+}
+
+.mobile-nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 16px 20px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  transition: all 0.2s;
+}
+
+.mobile-menu-container.dark .mobile-nav-link {
+  color: #f1f1f1;
+}
+
+.mobile-menu-container.light .mobile-nav-link {
+  color: #1e293b;
+}
+
+.mobile-nav-link.active {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: #ff0000;
+}
+
+.mobile-nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.mobile-menu-container.dark .mobile-nav-link:hover {
+  background-color: #424242;
+}
+
+.mobile-nav-icon {
+  font-size: 20px;
+  margin-right: 16px;
+  width: 24px;
+  text-align: center;
+}
+
+.mobile-nav-text {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .header-container {
+    padding: 12px 16px;
+  }
+  
+  .website-logo {
+    height: 24px;
+  }
+  
+  .menu-button {
+    display: block;
+    order: 1; /* Position between theme and logout */
+  }
+  
+  .theme-button {
+    order: 0; /* Theme button comes first */
+  }
+  
+  .logout-button.desktop {
+    display: none;
+  }
+  
+  .logout-button.mobile {
+    display: block;
+    order: 2; /* Logout button comes last */
+  }
+  
+  .profile-image.desktop {
+    display: none;
+  }
+  
+  .actions-container {
+    gap: 12px;
+  }
+  
+  /* Center align the navigation items */
+  .mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mobile-nav-link {
+    justify-content: center;
+    min-width: 200px;
+    text-align: center;
+  }
+  
+  .mobile-nav-icon {
+    margin-right: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+  
+  .logout-button.mobile {
+    display: none;
+  }
+}
