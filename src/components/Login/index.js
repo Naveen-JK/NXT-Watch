@@ -145,11 +145,15 @@ class Login extends Component {
                     Login
                   </button>
                   {showError && <p className="error-message">*{errorMsg}</p>}
-                  <div className="demo-credentials">
-                    <p className="demo-title">Demo Credentials:</p>
-                    <p className="demo-cred">Naveen / Naveen@2021</p>
-                    <p className="demo-cred">rahul / rahul@2021</p>
+                  <div className="dev-credentials">
+                    <p className={isDarkTheme ? 'dev-text dark' : 'dev-text light'}>
+                      <strong>Development Credentials:</strong>
+                    </p>
+                    <p className={isDarkTheme ? 'dev-text dark' : 'dev-text light'}>
+                      Username: rahul | Password: rahul@2021
+                    </p>
                   </div>
+
                 </form>
               </div>
             </div>
