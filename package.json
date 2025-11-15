@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "engines": {
-    "node": "^10.13 || 12 || 14 || 15",
+    "node": "18.x",
     "npm": ">=6"
   },
   "dependencies": {
@@ -41,7 +41,7 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "craco build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider craco build",
     "test": "craco test",
     "lint": "eslint .",
     "lint:fix": "eslint --fix src/",
