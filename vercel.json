@@ -1,5 +1,4 @@
 {
-  "version": 2,
   "builds": [
     {
       "src": "package.json",
@@ -9,6 +8,5 @@
       }
     }
   ],
-  "installCommand": "npm install --legacy-peer-deps",
-  "buildCommand": "NODE_OPTIONS=--openssl-legacy-provider npm run build"
+  "installCommand": "npm install --legacy-peer-deps"
 }
