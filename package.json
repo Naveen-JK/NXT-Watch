@@ -42,7 +42,8 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider craco build",
+    "build": "react-scripts build",
+    "vercel-install": "npm install --legacy-peer-deps",
     "test": "craco test",
     "lint": "eslint .",
     "lint:fix": "eslint --fix src/",
